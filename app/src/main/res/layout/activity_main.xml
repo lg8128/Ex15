@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="145dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="132dp"
+        android:onClick="OnBtn"
+        android:text="Change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <Switch
+        android:id="@+id/sw"
+        android:layout_width="99dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="268dp"
+        android:layout_height="237dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/RbRED"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:onClick="colorChange"
+            android:text="RED" />
+
+        <RadioButton
+            android:id="@+id/RbGreen"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:onClick="colorChange"
+            android:text="GREEN" />
+
+        <RadioButton
+            android:id="@+id/RbGRAY"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:onClick="colorChange"
+            android:text="GRAY" />
+
+        <RadioButton
+            android:id="@+id/RbBLUE"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:onClick="colorChange"
+            android:text="BLUE"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="363dp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
